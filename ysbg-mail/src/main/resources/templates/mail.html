@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh" xmlns:th="http://www.theymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎入职邮件！</title>
+</head>
+<body>
+<p>欢迎 <span th:text="${name}"></span> 加入 LTMSO 的大家庭，您的任职信息表如下：</p>
+<table border="1">
+    <tr>
+        <td>姓名：</td>
+        <td th:text="${name}"></td>
+    </tr>
+    <tr>
+        <td>职位：</td>
+        <td th:text="${posName}"></td>
+    </tr>
+    <tr>
+        <td>职称：</td>
+        <td th:text="${joblevelName}"></td>
+    </tr>
+    <tr>
+        <td>部门：</td>
+        <td th:text="${departmentName}"></td>
+    </tr>
+</table>
+
+<p>
+    我们公司的工作宗旨是严格，创新，诚信，您的加入将为我们带来新鲜的血液，带来创新思维，以及为我们树立良好的形象！希望在以后的工作中我们
+    能够齐心协力，与时俱进，团结协作！同时也祝您在本公司，工作愉快，实现自己的人生价值！希望在未来的日子里，携手共进！
+</p>
+</body>
+</html>
