@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.177:3306/ysbg?characterEncoding=UTF-8
-    username: root
-    password: 123456
+    url: jdbc:mysql://192.168.0.177:3306/ysbg?characterEncoding=UTF-8
+    username: joey
+    password: 17520
     hikari:
       # 连接池名
       pool-name: DateHikariCP
@@ -35,11 +35,11 @@ spring:
   # RabbitMQ配置
   rabbitmq:
     # 用户名
-    username: admin
+    username: joey
     # 密码
-    password: 123456
+    password: joey
     # 服务器地址
-    host: 192.168.1.177
+    host: 192.168.0.177
     # 端口号
     port: 5672
     # 消息确认回调
@@ -51,11 +51,11 @@ spring:
     # 超时时间
     timeout: 10000
     # 服务器地址
-    host: 192.168.1.177
+    host: 192.168.0.177
     # 服务器端口
     port: 6379
     # 服务器密码
-    password: 123456
+    password: 17520
     # 默认数据库
     database: 0
     lettuce:

@@ -1,0 +1,21 @@
+version: '3'
+services:
+  ysbg-server:
+    container_name: ysbg-server
+    build:
+      context: ./ysbg-server
+      dockerfile: Dockerfile
+    ports:
+      - "8088:8088"
+    networks:
+      - mynetwork
+
+  ysbg-mail:
+    container_name: ysbg-mail
+    build:
+      context: ./ysbg-mail
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - mynetwork

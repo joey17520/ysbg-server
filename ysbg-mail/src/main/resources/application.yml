@@ -11,7 +11,7 @@ spring:
     # 默认编码
     default-encoding: UTF-8
     # 授权码
-    password: DIDYHMTONBLTYSBR
+    password: AJBIRQEADSFLGIPC
     # 发件人地址
     username: joey17520@163.com
     # 端口号
@@ -20,11 +20,11 @@ spring:
   # RabbitMQ配置
   rabbitmq:
     # 用户名
-    username: admin
+    username: joey
     # 密码
-    password: 123456
+    password: joey
     # 服务器地址
-    host: 192.168.1.177
+    host: 192.168.0.177
     # 端口号
     port: 5672
     listener:
@@ -40,7 +40,7 @@ spring:
     # 服务器端口
     port: 6379
     # 服务器密码
-    password: 123456
+    password: 17520
     # 默认数据库
     database: 0
     lettuce:
